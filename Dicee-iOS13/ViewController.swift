@@ -52,10 +52,10 @@ class ViewController: UIViewController {
         if firstRandomNumber == secondRandomNumber {
             if firstRandomNumber == 5 {
                 textLabel.text = "6. 6. Impressive!"
-                pointCounter += 5
+                pointCounter += 12 //double points on 6s
             } else {
                 textLabel.text = "You rolled a double!"
-                pointCounter += 1
+                pointCounter += (firstRandomNumber + 1)
             }
             pointsLabel.text = "\(pointCounter)"
         } else {
